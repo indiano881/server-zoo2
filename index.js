@@ -2,6 +2,9 @@ import express from "express";
 import birdsRouter from "./routes/birds.js";
 import mammalsRouter from "./routes/mammals.js";
 import reptilesRouter from "./routes/reptiles.js";
+import { mammals } from "./public/data/animals.js";
+import { reptiles } from "./public/data/animals.js";
+import { birds } from "./public/data/animals.js";
 import * as path from 'path';
 
 const app= express();
@@ -16,7 +19,10 @@ app.get("/", (req,res)=> {
     res.render(
         "pages/home.ejs",
         {
-            pageTitle: "Welcome to D^3+B Zoo!"
+            pageTitle: "Welcome to D^3+B Zoo!",
+            mammals: mammals,
+            birds: birds,
+            reptiles: reptiles
         })
     });
 
