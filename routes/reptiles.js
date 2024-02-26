@@ -6,7 +6,7 @@ reptilesRouter.get("/", (req, res)=> {
     res.render(
         "pages/main_groups.ejs",
         {
-            className: "mammals",
+            className: "reptiles",
         }
     )
 })

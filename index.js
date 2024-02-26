@@ -1,4 +1,7 @@
 import express from "express";
+import birdsRouter from "./routes/birds.js";
+import mammalsRouter from "./routes/mammals.js";
+import reptilesRouter from "./routes/reptiles.js";
 
 const app= express();
 
@@ -10,5 +13,10 @@ app.get("/", (req,res)=> {
 
 
 app.listen(port, console.log("SERVER STARTED"))
+
 app.use(express.static("public"));
-//app.use("view engine", "ejs"); för ejs
+app.use("view engine", "ejs");
+app.use("/birds", birdsRouter);
+app.use("/mammals", mammalsRouter);
+app.use("/reptiles", reptilesRouter)
+
