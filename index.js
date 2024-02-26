@@ -1,11 +1,15 @@
 import express from "express";
-
+import * as path from 'path';
 const app= express();
 
 const port= 3000;
 
+const __dirname = path.resolve();
+
+app.set('views', path.join(__dirname, 'views'));
+
 app.get("/", (req,res)=> {
-    res.write("home page connected") //like this just a s aplace holder
+    res.render("pages/home.ejs") //like this just a s aplace holder
 })
 
 
