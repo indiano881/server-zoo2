@@ -43,7 +43,7 @@ const cockatoo = new Animal(
 );
 
 const perentie = new Animal(
-    "perentie",
+    "Perentie",
     "20 years",
     "reptile",
     "Carnivore, they eat animals like kangaroos, rabbits, lizards and birds",
@@ -54,7 +54,7 @@ const perentie = new Animal(
 );
 
 const hawksbillTurtle = new Animal(
-    "Hawksbill Turtle",
+    "Hawksbill turtle",
     "50 years",
     "reptile",
     "Other animals (sponges & jellyfish), sea plants",
@@ -65,7 +65,7 @@ const hawksbillTurtle = new Animal(
 );
 
 const frillNeckedLizard = new Animal(
-    "Frill-necked Lizard",
+    "Frill-necked lizard",
     "20 years",
     "reptile",
     "Small insects and spiders",
@@ -87,7 +87,7 @@ const echidna = new Animal(
 );
 
 const tasmanianDevil = new Animal(
-    "Tasmanian Devil",
+    "Tasmanian devil",
     "5 years",
     "mammals",
     "A predator, then eat meat from other animals such as wallabies and wombats",
