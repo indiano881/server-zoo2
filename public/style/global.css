@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+}
+
+.navigation li {
+    border: unset;
+    padding: unset;
+    width: unset;
+}
+
+.navigation li {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 100%;
+    margin: 15px;
+    text-align: center;
+}
