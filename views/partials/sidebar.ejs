@@ -1,18 +1,19 @@
 <div class="sidebar-container">
-    <div class="sidebar">
-        <div class="sidebar-mammals">
-            <h3>Mammals</h3>
-            <% mammals.forEach(mammal => { %>
-                <p><%= mammal.species %></p>
-            <% }) %>
-            <h3>Birds</h3>
-            <% birds.forEach(bird => { %>
-                <p><%= bird.species %></p>
-            <% }) %>
-            <h3>Reptiles</h3>
-            <% reptiles.forEach(reptile => { %>
-                <p><%= reptile.species %></p>
-            <% }) %>
-        </div>
+  <div class="sidebar">
+    <div class="sidebar-mammals">
+      <h3>Mammals</h3>
+      <% mammals.forEach(mammal => { %>
+      <p id="<%= mammal.id %>" class="animal"><%= mammal.species %></p>
+      <!-- <p onclick="getAnimal('<%= mammal.id %>')" class="animal"><%= mammal.species %></p> -->
+      <% }) %>
+      <h3>Birds</h3>
+      <% birds.forEach(bird => { %>
+      <p id="<%= bird.id %>" class="animal"><%= bird.species %></p>
+      <% }) %>
+      <h3>Reptiles</h3>
+      <% reptiles.forEach(reptile => { %>
+      <p id="<%= reptile.id %>" class="animal"><%= reptile.species %></p>
+      <% }) %>
     </div>
+  </div>
 </div>

@@ -1,0 +1,10 @@
+<div class="sidebar-container">
+  <div class="sidebar">
+    <div class="sidebar-mammals">
+      <h3>Mammals</h3>
+      <% mammals.forEach(mammal => { %>
+      <p id="<%= mammal.id %>" class="animal"><%= mammal.species %></p>
+      <% }) %>
+    </div>
+  </div>
+</div>
