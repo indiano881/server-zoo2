@@ -5,33 +5,29 @@ import reptilesRouter from "./routes/reptiles.js";
 import { mammals } from "./public/data/animals.js";
 import { reptiles } from "./public/data/animals.js";
 import { birds } from "./public/data/animals.js";
-import * as path from 'path';
+import * as path from "path";
 
-const app= express();
+const app = express();
 
-const port= 3000;
+const port = 3000;
 
 const __dirname = path.resolve();
 
-app.set('views', path.join(__dirname, 'views'));
+app.set("views", path.join(__dirname, "views"));
 
-app.get("/", (req,res)=> {
-    res.render(
-        "pages/home.ejs",
-        {
-            pageTitle: "Welcome to D^3+B Zoo!",
-            mammals: mammals,
-            birds: birds,
-            reptiles: reptiles
-        })
-    });
+app.get("/", (req, res) => {
+  res.render("pages/home.ejs", {
+    pageTitle: "Welcome to D^3+B Zoo!",
+    mammals: mammals,
+    birds: birds,
+    reptiles: reptiles,
+  });
+});
 
-
-app.listen(port, console.log("SERVER STARTED"))
+app.listen(port, console.log("SERVER STARTED"));
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.use("/birds", birdsRouter);
 app.use("/mammals", mammalsRouter);
-app.use("/reptiles", reptilesRouter)
-
+app.use("/reptiles", reptilesRouter);
