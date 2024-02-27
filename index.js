@@ -19,7 +19,7 @@ app.use((req, res, next) => {
   next();
 });
 
-const day= new Date().getDay();
+const day = new Date().getDay();
 
 app.get("/", (req, res) => {
   res.render("pages/home.ejs", {
@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
     mammals: mammals,
     birds: birds,
     reptiles: reptiles,
-    dayOfTheWeek: day
+    dayOfTheWeek: day,
     url: req.url,
   });
 });

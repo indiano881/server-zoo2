@@ -8,8 +8,6 @@ mammalsRouter.get("/", (req, res) => {
     className: "mammals",
     targetSidebar: "sidebar-mammals.ejs",
     mammals: mammals,
-    birds: birds,
-    reptiles: reptiles,
     dayOfTheWeek: day,
     url: req.url,
   });

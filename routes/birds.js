@@ -8,7 +8,6 @@ birdsRouter.get("/", (req, res) => {
     className: "birds",
     targetSidebar: "sidebar-birds.ejs",
     birds: birds,
-    reptiles: reptiles,
     dayOfTheWeek: day,
     url: req.url,
   });
