@@ -32,11 +32,12 @@ header {
   background-image: url("../images/hero-img.jpg");
   background-size: cover;
   position: relative;
-}
-
-h1 {
-  color: white;
-  padding: 25px;
+  h1 {
+    color: white;
+    padding: 25px;
+    font-size: 4rem;
+    text-align: right;
+  }
 }
 
 section,
@@ -195,6 +196,13 @@ footer {
 .card-body {
   padding-top: 20px;
   padding: 16px;
+  p {
+    margin: 4px 0;
+  }
+  b {
+    width: 95px;
+    display: inline-block;
+  }
 }
 
 .card-footer {

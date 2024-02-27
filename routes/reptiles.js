@@ -6,6 +6,7 @@ const reptilesRouter = express.Router();
 reptilesRouter.get("/", (req, res) => {
   res.render("pages/main_groups.ejs", {
     className: "reptiles",
+    pageTitle: "Reptiles",
     targetSidebar: "sidebar-reptiles.ejs",
     reptiles: reptiles,
     url: req.url,

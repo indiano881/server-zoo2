@@ -21,7 +21,7 @@ animals.forEach((animal) => {
             <h3>${targetAnimal.species}</h3>
             <div>
               <p>
-              <b>Description: </b><span id="animal-short-description" class="d-inline">${
+              <b>Description </b>: <span id="animal-short-description" class="d-inline">${
                 targetAnimal.description.length > 200
                   ? targetAnimal.description.slice(0, 200) +
                     `...<span class="read-more" >Read More</span>`
@@ -32,11 +32,11 @@ animals.forEach((animal) => {
               } <span class="read-less" >Read Less</span></span>
               </p>
             </div>
-            <p><b>Lifespan: </b>${targetAnimal.lifespan}</p>
-            <p><b>Group: </b>${targetAnimal.group}</p>
-            <p><b>Lenght: </b>${targetAnimal.length}</p>
-            <p><b>Weight: </b>${targetAnimal.weight}</p>
-            <p><b>Found: </b>${targetAnimal.found}</p>
+            <p><b>Lifespan </b>: ${targetAnimal.lifespan}</p>
+            <p><b>Group </b>: ${targetAnimal.group}</p>
+            <p><b>Lenght </b>: ${targetAnimal.length}</p>
+            <p><b>Weight </b>: ${targetAnimal.weight}</p>
+            <p><b>Found </b>: ${targetAnimal.found}</p>
           </div>
           <div class="card-footer">
             <p>Somethings bla bla bla</p>
@@ -65,7 +65,7 @@ animalsInHomePage.forEach((animal) => {
             <h3>${targetAnimal.species}</h3>
             <div>
               <p>
-              <b>Description: </b><span id="animal-short-description" class="d-inline">${
+              <b>Description </b>: <span id="animal-short-description" class="d-inline">${
                 targetAnimal.description.length > 200
                   ? targetAnimal.description.slice(0, 200) + "..."
                   : targetAnimal.description
