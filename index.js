@@ -14,6 +14,10 @@ const port = process.env.PORT || 3000;
 const __dirname = path.resolve();
 
 app.set("views", path.join(__dirname, "views"));
+app.use((req, res, next) => {
+  res.locals.url = req.url;
+  next();
+});
 
 const day= new Date().getDay();
 
@@ -24,13 +28,15 @@ app.get("/", (req, res) => {
     birds: birds,
     reptiles: reptiles,
     dayOfTheWeek: day
+    url: req.url,
   });
 });
 
-app.listen(port, console.log("SERVER STARTED"));
-
 app.use(express.static("public"));
+
 app.set("view engine", "ejs");
 app.use("/birds", birdsRouter);
 app.use("/mammals", mammalsRouter);
 app.use("/reptiles", reptilesRouter);
+
+app.listen(port, console.log("SERVER STARTED"));
