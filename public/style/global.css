@@ -15,13 +15,15 @@
 }
 
 html {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body {
   min-height: 100%;
   margin: 0;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
@@ -42,8 +44,6 @@ section,
   flex-grow: 1;
 }
 footer {
-  position: absolute;
-  bottom: 0;
   height: 60px;
   text-align: center;
   background-color: var(--primary-background-color);
@@ -173,7 +173,7 @@ footer {
 }
 .card {
   max-width: 800px;
-  border: 1px solid gray;
+  border: 1px solid #d1cccc;
   border-radius: 12px;
 }
 

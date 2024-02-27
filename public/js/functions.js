@@ -80,10 +80,6 @@ animalsInHomePage.forEach((animal) => {
          
         </div>
         `;
-
-    // readMore = document.querySelector(".read-more");
-    // readLess = document.querySelector(".read-less");
-    // getReadMore();
   });
 });
 
