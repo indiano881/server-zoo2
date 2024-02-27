@@ -2,7 +2,6 @@ import { allAnimals } from "../data/animals.js";
 
 const mainContent = document.querySelector(".main-content");
 const animals = document.querySelectorAll(".animal");
-let clickedAnimall;
 let readLess;
 let readMore;
 
@@ -44,7 +43,6 @@ animals.forEach((animal) => {
 
     readMore = document.querySelector(".read-more");
     readLess = document.querySelector(".read-less");
-    // console.log(clickedAnimall);
     getReadMore();
   });
 });
@@ -63,20 +61,3 @@ const getReadMore = () => {
     document.getElementById("animal-long-description").classList.add("d-none");
   });
 };
-
-// const getLesInfo = (pAnimalId) => {
-//   console.log("hello");
-//   console.log(pAnimalId);
-// };
-
-// const readMore = (pAnimalId) => {
-//   clickedAnimall.addEventListener("click", () => {
-//     const gotAnimal = allAnimals.find((animal) => animal.id == pAnimalId);
-//     const descriptionTag = document.getElementById("animal-description");
-//     // console.log(targetDescription);
-//     console.log(descriptionTag);
-//     descriptionTag.innerHTML = `
-//     <span id="animal-description" >${gotAnimal.description}<span id="less-more-${gotAnimal.id}" class="read-less" > Read Less</span></span>
-//     `;
-//   });
-// };
