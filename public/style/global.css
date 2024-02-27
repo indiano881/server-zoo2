@@ -89,7 +89,20 @@ footer {
   font-size: 1rem;
   color: rgb(0, 0, 0);
 }
-/* Routes styles */
+.go-routes-link {
+  border: 1px solid #174918;
+  padding: 3px 8px;
+  margin-top: 16px;
+  display: inline-block;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #174918;
+}
+.go-routes-link:hover {
+  background-color: #174918;
+  color: white;
+}
+/* Routes styles start*/
 .routes-container {
   display: flex;
   align-items: start;
@@ -128,9 +141,85 @@ footer {
   height: 40px;
 }
 
+.side-bar {
+  width: 40%;
+  min-height: 60vh;
+  padding: 12px;
+  border-right: 1px solid rgba(128, 128, 128, 0.53);
+  margin-right: 16px;
+}
+.welcome-message {
+  padding: 8px;
+  font-size: 2rem;
+  color: green;
+}
+
+/* Routes styles start*/
+.routes-container {
+  display: flex;
+  align-items: start;
+  width: 95%;
+  margin-top: 24px;
+}
+.main-content {
+  width: 60%;
+  min-height: 60vh;
+}
 
 @media screen and (min-width: 769px) {
   header {
     height: 400px;
   }
 }
+.card {
+  max-width: 800px;
+  border: 1px solid gray;
+  border-radius: 12px;
+}
+
+.card-img-home {
+  text-align: center;
+  padding-top: 20px;
+}
+.main-content .animal-img-routes-page {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 12px 12px 0 0;
+}
+.main-content .animal-img-home-page {
+  width: 150px;
+  height: auto;
+  margin: auto;
+  border-radius: 12px;
+}
+.card-body {
+  padding-top: 20px;
+  padding: 16px;
+}
+
+.card-footer {
+  height: 40px;
+  padding: 12px;
+}
+/* Routes styles end */
+
+/* Read more and less styles  start*/
+.read-more,
+.read-less {
+  font-weight: bold;
+  color: green;
+  text-decoration: underline;
+  padding: 0 6px;
+  cursor: pointer;
+}
+.read-more:hover,
+.read-less:hover {
+  opacity: 0.7;
+}
+.d-none {
+  display: none;
+}
+.d-inline {
+  display: inline;
+}
+/* Read more and less styles  end*/
