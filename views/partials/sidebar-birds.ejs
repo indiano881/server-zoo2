@@ -1,0 +1,10 @@
+<div class="sidebar-container">
+  <div class="sidebar">
+    <div class="sidebar-mammals">
+      <h3>Birds</h3>
+      <% birds.forEach(bird => { %>
+      <p id="<%= bird.id %>" class="animal"><%= bird.species %></p>
+      <% }) %>
+    </div>
+  </div>
+</div>

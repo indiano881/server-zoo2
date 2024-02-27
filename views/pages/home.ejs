@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include("./../partials/head.ejs") %>
-<body>
+  <%- include("./../partials/head.ejs") %>
+  <body>
     <%- include("./../partials/header.ejs") %>
-    <section class="main-content">
-        <%- include("../partials/sidebar") %>
-    </section>
+    <div class="routes-container">
+      <section class="side-bar"><%- include("../partials/sidebar.ejs") %></section>
+      <section class="main-content">
+        <div class="welcome-message">
+            Welcome to "The Fantastic Zoo"! Immerse yourself in a world where the extraordinary becomes ordinary. Encounter creatures beyond your wildest imagination, from mythical beasts to real-life wonders. Marvel at the majestic flight of mythical dragons, the graceful dance of unicorns, and the playful antics of griffins. Explore habitats ranging from enchanted forests to mystical mountains, each teeming with life. Our zoo offers a journey through the realms of fantasy and reality, where every corner holds a new surprise. Join us for an unforgettable adventure into the realms of the fantastic, where imagination knows no bounds. Step into "The Fantastic Zoo" and let your imagination soar!
+        </div>
+      </section>
+    </div>
     <%- include("./../partials/footer.ejs") %>
-</body>
+    <script type="module" src="js/functions.js"></script>
+  </body>
 </html>
