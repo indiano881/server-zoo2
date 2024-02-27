@@ -26,7 +26,17 @@ body {
 
 header {
   text-align: center;
+  min-height: 300px;
+  background-image: url("../images/hero-img.jpg");
+  background-size: cover;
+  position: relative;
 }
+
+h1 {
+  color: white;
+  padding: 25px;
+}
+
 section,
 .routes-container {
   flex-grow: 1;
@@ -36,7 +46,7 @@ footer {
   bottom: 0;
   height: 60px;
   text-align: center;
-  background-color: #80b85f;
+  background-color: var(--primary-background-color);
   margin-top: 24px;
   width: 100%;
   color: #fff;
@@ -45,6 +55,13 @@ footer {
   text-align: center;
   justify-content: center;
 }
+
+.nav-bar {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
 .navigation {
   display: flex;
   justify-content: space-around;
@@ -69,8 +86,8 @@ footer {
 }
 .welcome-message {
   padding: 8px;
-  font-size: 2rem;
-  color: green;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
 }
 /* Routes styles */
 .routes-container {
@@ -109,4 +126,11 @@ footer {
 
 .card-footer {
   height: 40px;
+}
+
+
+@media screen and (min-width: 769px) {
+  header {
+    height: 400px;
+  }
 }
