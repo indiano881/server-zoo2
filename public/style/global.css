@@ -67,7 +67,8 @@ footer {
   font-size: 2rem;
   color: green;
 }
-/* Routes styles */
+
+/* Routes styles start*/
 .routes-container {
   display: flex;
   align-items: start;
@@ -99,4 +100,27 @@ footer {
 
 .card-footer {
   height: 40px;
+  padding: 12px;
 }
+/* Routes styles end */
+
+/* Read more and less styles  start*/
+.read-more,
+.read-less {
+  font-weight: bold;
+  color: green;
+  text-decoration: underline;
+  padding: 0 6px;
+  cursor: pointer;
+}
+.read-more:hover,
+.read-less:hover {
+  opacity: 0.7;
+}
+.d-none {
+  display: none;
+}
+.d-inline {
+  display: inline;
+}
+/* Read more and less styles  end*/
