@@ -1,18 +1,22 @@
 <div class="sidebar-container">
     <div class="sidebar">
-        <div class="sidebar-mammals">
+        <div class="sidebar mammals">
             <h3>Mammals</h3>
             <% mammals.forEach(mammal => { %>
                 <p><%= mammal.species %></p>
             <% }) %>
+        </div>
+        <div class="sidebar birds">
             <h3>Birds</h3>
             <% birds.forEach(bird => { %>
                 <p><%= bird.species %></p>
             <% }) %>
+        </div>  
+        <div class="sidebar reptiles"> 
             <h3>Reptiles</h3>
             <% reptiles.forEach(reptile => { %>
                 <p><%= reptile.species %></p>
             <% }) %>
-        </div>
+        </div>     
     </div>
 </div>
