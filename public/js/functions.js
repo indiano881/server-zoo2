@@ -72,7 +72,9 @@ animalsInHomePage.forEach((animal) => {
               }</span>
               </p>
             </div>
-            <a class="go-routes-link" href="http://localhost:3000/${targetAnimal.group}">Go ${
+            <a class="go-routes-link inverted-5 " href="http://localhost:3000/${
+              targetAnimal.group
+            }">Go ${
       targetAnimal.group.charAt(0).toUpperCase() + targetAnimal.group.slice(1)
     } Page</a>
             

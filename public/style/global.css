@@ -75,7 +75,24 @@ footer {
 }
 .navigation li a {
   text-decoration: none;
-  color: var(--primary-text-color);
+  /* color: var(--primary-text-color); */
+}
+
+.hover {
+  --b: 0.1em; /* the thickness of the line */
+  --c: #ad3; /* the color */
+
+  color: #fff0;
+  padding-block: var(--b);
+  background: linear-gradient(var(--c) 50%, #fff 0) 0% calc(100% - var(--_p, 0%)) / 100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.3s var(--_s, 0s) linear, background-size 0.3s calc(0.3s - var(--_s, 0s));
+}
+.hover:hover {
+  --_p: 100%;
+  --_s: 0.3s;
 }
 
 .side-bar {
@@ -85,11 +102,21 @@ footer {
   border-right: 1px solid rgba(128, 128, 128, 0.53);
   margin-right: 16px;
 }
-.welcome-message {
-  padding: 8px;
-  font-size: 1rem;
-  color: rgb(0, 0, 0);
+.sidebar h3 {
+  margin-top: 12px;
 }
+.sidebar p {
+  margin: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  width: fit-content;
+  transition: all 0.3s;
+}
+.sidebar p:hover {
+  color: #57a928;
+  font-size: 1.2rem;
+}
+
 .go-routes-link {
   border: 1px solid #174918;
   padding: 3px 8px;
@@ -99,9 +126,19 @@ footer {
   text-decoration: none;
   color: #174918;
 }
-.go-routes-link:hover {
-  background-color: #174918;
-  color: white;
+
+.inverted-5 {
+  background: conic-gradient(from -135deg, #fff 0 90deg, #ad3 0),
+    conic-gradient(from -135deg, #ad3 0 90deg, #ffff 0);
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  background-size: 200% 100%;
+  background-position: right;
+  transition: 0.5s;
+}
+.inverted-5:hover {
+  background-position: center;
+  border: 1px solid #8bbb1a;
 }
 /* Routes styles start*/
 .routes-container {
