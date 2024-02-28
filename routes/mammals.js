@@ -1,5 +1,6 @@
 import express from "express";
 import { mammals } from "../public/data/animals.js";
+import { day } from "./../public/data/animals.js";
 
 const mammalsRouter = express.Router();
 

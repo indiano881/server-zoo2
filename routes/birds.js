@@ -1,6 +1,6 @@
 import express from "express";
 import { birds } from "../public/data/animals.js";
-
+import { day } from "./../public/data/animals.js";
 const birdsRouter = express.Router();
 
 birdsRouter.get("/", (req, res) => {
