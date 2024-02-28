@@ -108,6 +108,7 @@ allAnimals.forEach(targetAnimal => {
     console.log(targetAnimal);
     mainContent.innerHTML = `
     <div class="animal-details">
+      <button class="back-btn" onclick="history.back()">Go Back</button>
       <img class="animal-details-img" src="${targetAnimal.image}">
       <h2>${targetAnimal.species}</h2>
       <p><b>Lifespan </b>: ${targetAnimal.lifespan}</p>
