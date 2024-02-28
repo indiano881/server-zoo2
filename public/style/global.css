@@ -30,7 +30,7 @@ body {
 header {
   text-align: center;
   min-height: 30%;
-  background-image: url('../images/hero-img.jpg');
+  background-image: url("../images/hero-img.jpg");
   background-size: cover;
   position: relative;
   h1 {
@@ -86,14 +86,11 @@ footer {
 
   color: #fff0;
   padding-block: var(--b);
-  background: linear-gradient(var(--c) 50%, #fff 0) 0%
-      calc(100% - var(--_p, 0%)) / 100% 200%,
-    linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b)
-      no-repeat;
+  background: linear-gradient(var(--c) 50%, #fff 0) 0% calc(100% - var(--_p, 0%)) / 100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b) no-repeat;
   -webkit-background-clip: text, padding-box;
   background-clip: text, padding-box;
-  transition: 0.3s var(--_s, 0s) linear,
-    background-size 0.3s calc(0.3s - var(--_s, 0s));
+  transition: 0.3s var(--_s, 0s) linear, background-size 0.3s calc(0.3s - var(--_s, 0s));
 }
 .hover:hover {
   --_p: 100%;
@@ -331,6 +328,10 @@ footer {
   header {
     h1 {
       font-size: 1.6rem;
+      font-size: 1.6rem;
+      padding-right: 16px;
+      padding-top: 16px;
+      margin-bottom: 40px;
     }
   }
 
