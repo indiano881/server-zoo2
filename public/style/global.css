@@ -237,8 +237,10 @@ footer {
 }
 .main-content .animal-img-routes-page {
   width: 100%;
-  max-height: 400px;
+  max-width: 400px;
+  height: auto;
   border-radius: 12px 12px 0 0;
+  align-self: center;
 }
 .main-content .animal-img-home-page {
   width: 150px;
@@ -264,7 +266,8 @@ footer {
 }
 
 .read-more-btn,
-.back-btn {
+.back-btn,
+.read-more-btn-home {
   height: 25px;
   width: 100px;
   margin-top: -30px;
@@ -272,6 +275,10 @@ footer {
   background-color: var(--accent-color);
   color: rgb(0, 0, 0);
   cursor: pointer;
+}
+
+.read-more-btn-home {
+  margin: 10px;
 }
 
 .card-footer {

@@ -33,6 +33,7 @@ animals.forEach((animal) => {
               </p>
             </div>
             <p><b>Lifespan </b>: ${targetAnimal.lifespan}</p>
+            <p><b>Food </b>: ${targetAnimal.food}</p>
             <p><b>Group </b>: ${targetAnimal.group}</p>
             <p><b>Lenght </b>: ${targetAnimal.length}</p>
             <p><b>Weight </b>: ${targetAnimal.weight}</p>
@@ -71,6 +72,8 @@ animalsInHomePage.forEach((animal) => {
                   : targetAnimal.description
               }</span>
               </p>
+              <p><b>Food: </b> ${targetAnimal.food}</p>
+              <button class="read-more-btn-home"><a href="/animaldetails?animal=${targetAnimal.species}">Learn more</a></button>
             </div>
             <a class="go-routes-link inverted-5 " href="http://localhost:3000/${
               targetAnimal.group
@@ -112,6 +115,7 @@ allAnimals.forEach(targetAnimal => {
       <img class="animal-details-img" src="${targetAnimal.image}">
       <h2>${targetAnimal.species}</h2>
       <p><b>Lifespan </b>: ${targetAnimal.lifespan}</p>
+      <p><b>Food </b>: ${targetAnimal.food}</p>
       <p><b>Group </b>: ${targetAnimal.group}</p>
       <p><b>Lenght </b>: ${targetAnimal.length}</p>
       <p><b>Weight </b>: ${targetAnimal.weight}</p>
