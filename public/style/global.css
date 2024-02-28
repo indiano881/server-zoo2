@@ -24,6 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: scroll;
 }
 
 header {
@@ -220,6 +221,7 @@ footer {
   align-items: start;
   width: 95%;
   margin-top: 24px;
+  overflow: scroll;
 }
 .main-content {
   width: 60%;
