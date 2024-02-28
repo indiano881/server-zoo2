@@ -28,15 +28,16 @@ body {
 
 header {
   text-align: center;
-  min-height: 300px;
-  background-image: url("../images/hero-img.jpg");
+  min-height: 30%;
+  background-image: url('../images/hero-img.jpg');
   background-size: cover;
   position: relative;
   h1 {
     color: white;
-    padding: 25px;
-    font-size: 4rem;
+    padding: 60px;
+    font-size: 1.5rem;
     text-align: right;
+    margin-bottom: 5px;
   }
 }
 
@@ -84,11 +85,14 @@ footer {
 
   color: #fff0;
   padding-block: var(--b);
-  background: linear-gradient(var(--c) 50%, #fff 0) 0% calc(100% - var(--_p, 0%)) / 100% 200%,
-    linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b) no-repeat;
+  background: linear-gradient(var(--c) 50%, #fff 0) 0%
+      calc(100% - var(--_p, 0%)) / 100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b)
+      no-repeat;
   -webkit-background-clip: text, padding-box;
   background-clip: text, padding-box;
-  transition: 0.3s var(--_s, 0s) linear, background-size 0.3s calc(0.3s - var(--_s, 0s));
+  transition: 0.3s var(--_s, 0s) linear,
+    background-size 0.3s calc(0.3s - var(--_s, 0s));
 }
 .hover:hover {
   --_p: 100%;
@@ -144,6 +148,7 @@ footer {
 .routes-container {
   display: flex;
   align-items: start;
+  height: 69vh;
   width: 95%;
   margin-top: 24px;
 }
@@ -204,7 +209,8 @@ footer {
 }
 .welcome-message {
   padding: 8px;
-  font-size: 1rem;
+
+  font-size: 1.12rem;
   color: rgb(0, 0, 0);
 }
 
@@ -219,7 +225,6 @@ footer {
   width: 60%;
   min-height: 60vh;
 }
-
 
 .card {
   max-width: 800px;
@@ -262,7 +267,6 @@ footer {
 .read-more-btn {
   height: 25px;
   width: 100px;
-  
 }
 
 .card-footer {
@@ -299,5 +303,75 @@ footer {
 
   .side-bar {
     max-width: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+
+  .routes-container {
+    overflow: scroll;
+  }
+  .card {
+    max-width: 800px;
+    border: 1px solid #d1cccc;
+    border-radius: 12px;
+    height: fit-content;
+  }
+
+  .card-img-home {
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 160px;
+  }
+  .main-content .animal-img-routes-page {
+    width: 100%;
+    max-height: 170px;
+    border-radius: 12px 12px 0 0;
+  }
+  .main-content .animal-img-home-page {
+    width: 150px;
+    height: auto;
+
+    border-radius: 12px;
+  }
+  .card-body {
+    padding-top: 20px;
+    padding: 16px;
+    p {
+      margin: 4px 0;
+    }
+    b {
+      width: 95px;
+      display: inline-block;
+    }
+  }
+  .card {
+    max-width: 800px;
+    border: 1px solid gray;
+    border-radius: 12px;
+  }
+  .card-img {
+    margin: 0;
+  }
+
+  .main-content img {
+    width: 100%;
+    height: 320px;
+    margin: auto;
+    margin-bottom: 24px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .card-body {
+    margin: 0;
+    padding-top: 20px;
+    padding: 16px;
+  }
+
+  .card-footer {
+    height: 40px;
   }
 }
