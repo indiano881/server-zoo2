@@ -185,6 +185,10 @@ footer {
   margin: 20px;
 }
 
+.animal-details h2 {
+  align-self: center;
+}
+
 .long-description {
   margin-top: 15px;
 }
@@ -233,8 +237,10 @@ footer {
 }
 .main-content .animal-img-routes-page {
   width: 100%;
-  max-height: 400px;
+  max-width: 400px;
+  height: auto;
   border-radius: 12px 12px 0 0;
+  align-self: center;
 }
 .main-content .animal-img-home-page {
   width: 150px;
@@ -256,13 +262,23 @@ footer {
 
 .read-more-btn a:link {
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
-.read-more-btn {
+.read-more-btn,
+.back-btn,
+.read-more-btn-home {
   height: 25px;
   width: 100px;
-  
+  margin-top: -30px;
+  margin-bottom: 15px;
+  background-color: var(--accent-color);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.read-more-btn-home {
+  margin: 10px;
 }
 
 .card-footer {
