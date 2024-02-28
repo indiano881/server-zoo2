@@ -2,6 +2,7 @@ import express from "express";
 import birdsRouter from "./routes/birds.js";
 import mammalsRouter from "./routes/mammals.js";
 import reptilesRouter from "./routes/reptiles.js";
+import animalsRouter from "./routes/animal-details.js"
 import { mammals } from "./public/data/animals.js";
 import { reptiles } from "./public/data/animals.js";
 import { birds } from "./public/data/animals.js";
@@ -35,5 +36,6 @@ app.set("view engine", "ejs");
 app.use("/birds", birdsRouter);
 app.use("/mammals", mammalsRouter);
 app.use("/reptiles", reptilesRouter);
+app.use("/animaldetails", animalsRouter);
 
 app.listen(port, console.log("SERVER STARTED"));

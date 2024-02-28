@@ -96,7 +96,7 @@ footer {
 }
 
 .side-bar {
-  width: 40%;
+  max-width: 200px;
   min-height: 60vh;
   padding: 12px;
   border-right: 1px solid rgba(128, 128, 128, 0.53);
@@ -179,8 +179,24 @@ footer {
   height: 40px;
 }
 
+.main-content .animal-details {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.long-description {
+  margin-top: 15px;
+}
+
+.main-content .animal-details-img {
+  width: 80%;
+  height: auto;
+  align-self: center;
+}
+
 .side-bar {
-  width: 40%;
+  width: 30%;
   min-height: 60vh;
   padding: 12px;
   border-right: 1px solid rgba(128, 128, 128, 0.53);
@@ -188,8 +204,8 @@ footer {
 }
 .welcome-message {
   padding: 8px;
-  font-size: 2rem;
-  color: green;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
 }
 
 /* Routes styles start*/
@@ -204,11 +220,7 @@ footer {
   min-height: 60vh;
 }
 
-@media screen and (min-width: 769px) {
-  header {
-    height: 400px;
-  }
-}
+
 .card {
   max-width: 800px;
   border: 1px solid #d1cccc;
@@ -242,6 +254,17 @@ footer {
   }
 }
 
+.read-more-btn a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.read-more-btn {
+  height: 25px;
+  width: 100px;
+  
+}
+
 .card-footer {
   height: 40px;
   padding: 12px;
@@ -268,3 +291,13 @@ footer {
   display: inline;
 }
 /* Read more and less styles  end*/
+
+@media screen and (min-width: 769px) {
+  header {
+    height: 400px;
+  }
+
+  .side-bar {
+    max-width: 150px;
+  }
+}
