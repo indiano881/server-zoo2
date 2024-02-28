@@ -188,13 +188,15 @@ footer {
   display: flex;
   align-items: start;
   width: 95%;
-  margin-top: 24px;
+  margin: 24px auto;
   height: 69vh;
   overflow: scroll;
 }
 .main-content {
   width: 60%;
   min-height: 60vh;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
@@ -209,7 +211,7 @@ footer {
 }
 .main-content .animal-img-routes-page {
   width: 100%;
-  max-width: 400px;
+  max-height: 450px;
   height: auto;
   border-radius: 12px 12px 0 0;
   align-self: center;
