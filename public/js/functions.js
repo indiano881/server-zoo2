@@ -21,7 +21,7 @@ animals.forEach((animal) => {
             <h3>${targetAnimal.species}</h3>
             <div>
               <p>
-              <b>Description: </b><span id="animal-short-description" class="d-inline">${
+              <b>Description </b>: <span id="animal-short-description" class="d-inline">${
                 targetAnimal.description.length > 200
                   ? targetAnimal.description.slice(0, 200) +
                     `...<span class="read-more" >Read More</span>`
@@ -32,14 +32,14 @@ animals.forEach((animal) => {
               } <span class="read-less" >Read Less</span></span>
               </p>
             </div>
-            <p><b>Lifespan: </b>${targetAnimal.lifespan}</p>
-            <p><b>Group: </b>${targetAnimal.group}</p>
-            <p><b>Lenght: </b>${targetAnimal.length}</p>
-            <p><b>Weight: </b>${targetAnimal.weight}</p>
-            <p><b>Found: </b>${targetAnimal.found}</p>
+            <p><b>Lifespan </b>: ${targetAnimal.lifespan}</p>
+            <p><b>Group </b>: ${targetAnimal.group}</p>
+            <p><b>Lenght </b>: ${targetAnimal.length}</p>
+            <p><b>Weight </b>: ${targetAnimal.weight}</p>
+            <p><b>Found </b>: ${targetAnimal.found}</p>
           </div>
           <div class="card-footer">
-            <p>Somethings bla bla bla</p>
+            <button class="read-more-btn"><a href="/animaldetails?animal=${targetAnimal.species}">Learn more</a></button>
           </div>
         </div>
         `;
@@ -65,14 +65,16 @@ animalsInHomePage.forEach((animal) => {
             <h3>${targetAnimal.species}</h3>
             <div>
               <p>
-              <b>Description: </b><span id="animal-short-description" class="d-inline">${
+              <b>Description </b>: <span id="animal-short-description" class="d-inline">${
                 targetAnimal.description.length > 200
                   ? targetAnimal.description.slice(0, 200) + "..."
                   : targetAnimal.description
               }</span>
               </p>
             </div>
-            <a class="go-routes-link" href="http://localhost:3000/${targetAnimal.group}">Go ${
+            <a class="go-routes-link inverted-5 " href="http://localhost:3000/${
+              targetAnimal.group
+            }">Go ${
       targetAnimal.group.charAt(0).toUpperCase() + targetAnimal.group.slice(1)
     } Page</a>
             
@@ -80,10 +82,6 @@ animalsInHomePage.forEach((animal) => {
          
         </div>
         `;
-
-    // readMore = document.querySelector(".read-more");
-    // readLess = document.querySelector(".read-less");
-    // getReadMore();
   });
 });
 
@@ -101,3 +99,25 @@ const getReadMore = () => {
     document.getElementById("animal-long-description").classList.add("d-none");
   });
 };
+
+const params = new URLSearchParams(window.location.search);
+const animal = params.get('animal');
+
+allAnimals.forEach(targetAnimal => {
+  if (targetAnimal.species === animal) {
+    console.log(targetAnimal);
+    mainContent.innerHTML = `
+    <div class="animal-details">
+      <img class="animal-details-img" src="${targetAnimal.image}">
+      <h2>${targetAnimal.species}</h2>
+      <p><b>Lifespan </b>: ${targetAnimal.lifespan}</p>
+      <p><b>Group </b>: ${targetAnimal.group}</p>
+      <p><b>Lenght </b>: ${targetAnimal.length}</p>
+      <p><b>Weight </b>: ${targetAnimal.weight}</p>
+      <p><b>Found </b>: ${targetAnimal.found}</p>
+      <p class="long-description">${targetAnimal.longDescription}</p>
+    </div>
+    `
+  }
+});
+
