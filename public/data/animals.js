@@ -144,3 +144,5 @@ export const allAnimals = [
   cassowary,
   cockatoo,
 ];
+
+export const day = new Date().getDay();

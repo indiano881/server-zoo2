@@ -10,6 +10,7 @@ reptilesRouter.get("/", (req, res) => {
     targetSidebar: "sidebar-reptiles.ejs",
     reptiles: reptiles,
     url: req.url,
+    dayOfTheWeek: day
   });
 });
 

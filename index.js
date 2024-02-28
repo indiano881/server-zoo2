@@ -6,6 +6,7 @@ import animalsRouter from "./routes/animal-details.js"
 import { mammals } from "./public/data/animals.js";
 import { reptiles } from "./public/data/animals.js";
 import { birds } from "./public/data/animals.js";
+import { day } from "./public/data/animals.js";
 import * as path from "path";
 
 const app = express();
@@ -27,6 +28,7 @@ app.get("/", (req, res) => {
     birds: birds,
     reptiles: reptiles,
     url: req.url,
+    dayOfTheWeek: day
   });
 });
 
