@@ -1,5 +1,6 @@
 import express from "express";
 import { reptiles } from "../public/data/animals.js";
+import { day } from "./../public/data/animals.js";
 
 const reptilesRouter = express.Router();
 
@@ -10,6 +11,7 @@ reptilesRouter.get("/", (req, res) => {
     targetSidebar: "sidebar-reptiles.ejs",
     reptiles: reptiles,
     url: req.url,
+    dayOfTheWeek: day
   });
 });
 

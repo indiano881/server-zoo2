@@ -1,5 +1,6 @@
 import express from "express";
 import { mammals } from "../public/data/animals.js";
+import { day } from "./../public/data/animals.js";
 
 const mammalsRouter = express.Router();
 
@@ -10,6 +11,7 @@ mammalsRouter.get("/", (req, res) => {
     targetSidebar: "sidebar-mammals.ejs",
     mammals: mammals,
     url: req.url,
+    dayOfTheWeek: day
   });
 });
 
