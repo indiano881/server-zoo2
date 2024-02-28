@@ -282,7 +282,7 @@ footer {
   }
 
   .side-bar {
-    max-width: 150px;
+    max-width: 250px;
   }
 }
 @media screen and (max-width: 768px) {
