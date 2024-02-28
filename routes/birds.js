@@ -10,7 +10,7 @@ birdsRouter.get("/", (req, res) => {
     targetSidebar: "sidebar-birds.ejs",
     birds: birds,
     url: req.url,
-    dayOfTheWeek: day
+    dayOfTheWeek: day,
   });
 });
 

@@ -40,7 +40,9 @@ animals.forEach((animal) => {
             <p><b>Found </b>: ${targetAnimal.found}</p>
           </div>
           <div class="card-footer">
-            <button class="read-more-btn"><a href="/animaldetails?animal=${targetAnimal.species}">Learn more</a></button>
+            <button class="read-more-btn inverted-5"><a href="/animaldetails?animal=${
+              targetAnimal.species
+            }">Learn more</a></button>
           </div>
         </div>
         `;
@@ -73,7 +75,9 @@ animalsInHomePage.forEach((animal) => {
               }</span>
               </p>
               <p><b>Food: </b> ${targetAnimal.food}</p>
-              <button class="read-more-btn-home"><a href="/animaldetails?animal=${targetAnimal.species}">Learn more</a></button>
+              <button class="read-more-btn-home inverted-5"><a href="/animaldetails?animal=${
+                targetAnimal.species
+              }">Learn more</a></button>
             </div>
             <a class="go-routes-link inverted-5 " href="http://localhost:3000/${
               targetAnimal.group
@@ -104,14 +108,14 @@ const getReadMore = () => {
 };
 
 const params = new URLSearchParams(window.location.search);
-const animal = params.get('animal');
+const animal = params.get("animal");
 
-allAnimals.forEach(targetAnimal => {
+allAnimals.forEach((targetAnimal) => {
   if (targetAnimal.species === animal) {
     console.log(targetAnimal);
     mainContent.innerHTML = `
+    <button class="back-btn inverted-5" onclick="history.back()">Go Back</button>
     <div class="animal-details">
-      <button class="back-btn" onclick="history.back()">Go Back</button>
       <img class="animal-details-img" src="${targetAnimal.image}">
       <h2>${targetAnimal.species}</h2>
       <p><b>Lifespan </b>: ${targetAnimal.lifespan}</p>
@@ -122,7 +126,6 @@ allAnimals.forEach(targetAnimal => {
       <p><b>Found </b>: ${targetAnimal.found}</p>
       <p class="long-description">${targetAnimal.longDescription}</p>
     </div>
-    `
+    `;
   }
 });
-
