@@ -11,7 +11,7 @@ mammalsRouter.get("/", (req, res) => {
     targetSidebar: "sidebar-mammals.ejs",
     mammals: mammals,
     url: req.url,
-    dayOfTheWeek: day
+    dayOfTheWeek: day,
   });
 });
 
