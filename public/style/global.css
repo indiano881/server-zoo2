@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* overflow: scroll; */
+  overflow: scroll;
 }
 
 header {
@@ -195,7 +195,7 @@ footer {
   width: 95%;
   margin: 24px auto;
   height: 69vh;
-  /* overflow: scroll; */
+  overflow: scroll;
 }
 .main-content {
   width: 60%;
@@ -317,7 +317,7 @@ footer {
     padding: 10px;
   }
   .routes-container {
-    /* overflow: scroll; */
+    overflow: scroll;
   }
   .card {
     max-width: 800px;
