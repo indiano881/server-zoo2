@@ -160,6 +160,8 @@ footer {
   display: flex;
   flex-direction: column;
   margin: 20px;
+  max-width: 800px;
+  align-self: center;
 }
 
 .animal-details h2 {
@@ -197,12 +199,17 @@ footer {
   min-height: 60vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .card {
   max-width: 800px;
   border: 1px solid #d1cccc;
   border-radius: 12px;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-img-home {
@@ -346,6 +353,8 @@ footer {
   }
   .card-img {
     margin: 0;
+    max-width: 500px;
+    height: auto;
   }
 
   .main-content img {
