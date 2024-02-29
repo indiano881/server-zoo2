@@ -1,6 +1,18 @@
 let studentIdCounter = 1;
 
-function Animal(species, lifespan, group, food, description, length, weight, found, image, longDescription) {
+function Animal(
+  species,
+  lifespan,
+  group,
+  food,
+  description,
+  length,
+  weight,
+  found,
+  image,
+  isActive,
+  longDescription
+) {
   this.species = species;
   this.lifespan = lifespan;
   this.group = group;
@@ -10,6 +22,7 @@ function Animal(species, lifespan, group, food, description, length, weight, fou
   this.weight = weight;
   this.found = found;
   this.image = image;
+  this.isActive = isActive;
   this.longDescription = longDescription; // Added longDescription property
   this.id = studentIdCounter++;
 }
@@ -24,6 +37,7 @@ const kookaburra = new Animal(
   "300g",
   "Australia wide",
   "images/kookaburra.jpg",
+  false,
   "The laughing kookaburra, scientifically known as Dacelo novaeguineae, is a charismatic bird native to Australia, famous for its distinctive call resembling human laughter. As the largest member of the kingfisher family, it measures up to 45 centimeters in length and weighs around 300 grams. Sporting predominantly brown plumage with blue streaks on the wings and tail, the kookaburra has a stout build, large head, and a powerful, hooked beak. These birds primarily feed on insects, small vertebrates, and occasionally snakes, frogs, and lizards. However, they exhibit opportunistic feeding behavior and have been observed consuming fruits and seeds, especially in suburban areas. Kookaburras are highly social, forming close-knit family units characterized by cooperative behaviors such as hunting and territory defense. In Aboriginal folklore, the kookaburra holds cultural significance, often symbolizing good luck and prosperity. Despite their adaptability and relatively common status, habitat loss, fragmentation, and competition from invasive species pose threats to their survival. Conservation efforts aimed at preserving their natural habitats are crucial for ensuring the continued existence of these iconic Australian birds."
 );
 
@@ -37,6 +51,7 @@ const cassowary = new Animal(
   "44kg",
   "Queensland",
   "images/cassowary.jpg",
+  false,
   "The cassowary, known scientifically as Casuarius casuarius, is a large flightless bird native to the tropical forests of New Guinea and northeastern Australia. With its striking appearance and vibrant colors, the cassowary stands as one of the largest bird species globally, reaching heights of up to two meters and weighing as much as 60 kilograms. Despite their impressive size, cassowaries are known for their agility and speed, capable of reaching speeds of up to 50 kilometers per hour. These remarkable birds play a crucial role in their ecosystem as seed dispersers, helping to maintain the health and diversity of the rainforest. They primarily feed on fallen fruits, but also consume a variety of plants, insects, and small animals. Cassowaries are equipped with powerful legs and sharp claws, which they use for foraging and defense. Despite their ecological importance, cassowaries face numerous threats, including habitat loss, fragmentation, and hunting. Encroachment of human activities into their natural habitats has led to increased conflict and mortality rates. Conservation efforts are underway to protect cassowary populations and their habitats, including habitat restoration initiatives and public awareness campaigns. In Aboriginal culture, the cassowary holds significant spiritual importance, often revered as a symbol of strength and power. However, these magnificent birds are currently listed as endangered, highlighting the urgent need for conservation action to safeguard their future. Through collaborative efforts involving governments, conservation organizations, and local communities, we can work towards ensuring the survival of this iconic species for generations to come."
 );
 
@@ -50,6 +65,7 @@ const cockatoo = new Animal(
   "900 grams",
   "SE Australia",
   "images/cockatoo.jpg",
+  false,
   "The yellow-tailed black cockatoo, scientifically known as Calyptorhynchus funereus, is a charismatic bird found in southeastern Australia. With its distinctive appearance and loud, wailing calls, the cockatoo is a familiar sight in temperate forests and forested areas across south and central eastern Queensland to southeastern South Australia. These birds play an essential role in forest ecosystems, dispersing seeds and creating nest hollows for other wildlife. The yellow-tailed black cockatoo exhibits sexual dimorphism, with males and females displaying differences in their physical characteristics. Adult males have a black beak and pinkish-red eye-rings, while females have a bone-colored beak and grey eye-rings. In flight, these cockatoos flap deeply and slowly, with a peculiar heavy fluid motion. Despite their ecological importance, yellow-tailed black cockatoos face threats from habitat loss, fragmentation, and poaching. Encroachment of human activities into their natural habitats has resulted in declines in their populations, making them a conservation concern. Conservation efforts, including habitat restoration and captive breeding programs, are underway to protect these magnificent birds and ensure their survival in the wild. In addition to their ecological significance, yellow-tailed black cockatoos hold cultural importance in indigenous communities. They are often featured in Aboriginal folklore and are associated with spiritual beliefs and practices. By addressing the various challenges facing yellow-tailed black cockatoos and their habitats, we can work towards preserving their populations and maintaining the balance of forest ecosystems for future generations."
 );
 
@@ -63,7 +79,9 @@ const perentie = new Animal(
   "20kg",
   "Deserts",
   "images/perentie.jpg",
-  "The perentie, scientifically known as Varanus giganteus, holds a significant place in the ecosystem of Australia's arid regions, earning its status as the largest monitor lizard on the continent. With an imposing length of up to 2.5 meters and a weight reaching around 20 kilograms, the perentie embodies strength and resilience in its habitat. Thriving primarily in the remote and harsh landscapes west of the Great Dividing Range, this lizard species maintains a reclusive lifestyle, rarely encountering humans due to its elusive nature. As a carnivorous predator, the perentie preys upon a diverse range of animals including kangaroos, rabbits, lizards, and birds, asserting its dominance as a top predator in the food chain. Beyond its ecological significance, the perentie holds cultural importance in Aboriginal traditions, representing totemic connections and featuring prominently in indigenous folklore such as the Ngiṉṯaka dreaming. Despite its adaptation to harsh conditions, the perentie faces threats from habitat degradation and human activities. Conservation efforts are crucial to ensure the survival of this iconic species and preserve its role in Australia's rugged landscapes.");
+  false,
+  "The perentie, scientifically known as Varanus giganteus, holds a significant place in the ecosystem of Australia's arid regions, earning its status as the largest monitor lizard on the continent. With an imposing length of up to 2.5 meters and a weight reaching around 20 kilograms, the perentie embodies strength and resilience in its habitat. Thriving primarily in the remote and harsh landscapes west of the Great Dividing Range, this lizard species maintains a reclusive lifestyle, rarely encountering humans due to its elusive nature. As a carnivorous predator, the perentie preys upon a diverse range of animals including kangaroos, rabbits, lizards, and birds, asserting its dominance as a top predator in the food chain. Beyond its ecological significance, the perentie holds cultural importance in Aboriginal traditions, representing totemic connections and featuring prominently in indigenous folklore such as the Ngiṉṯaka dreaming. Despite its adaptation to harsh conditions, the perentie faces threats from habitat degradation and human activities. Conservation efforts are crucial to ensure the survival of this iconic species and preserve its role in Australia's rugged landscapes."
+);
 
 const hawksbillTurtle = new Animal(
   "Hawksbill turtle",
@@ -75,6 +93,7 @@ const hawksbillTurtle = new Animal(
   "50kg",
   "Tropical coasts of Queensland, Northern Territory and Western Australia",
   "images/hawksbillTurtle.jpg",
+  false,
   "The hawksbill turtle is a critically endangered species found in tropical oceans around the world. These turtles play a crucial role in marine ecosystems, helping to maintain the health of coral reefs by controlling populations of sponge and jellyfish. Unfortunately, hawksbill turtles are facing numerous threats including habitat loss, pollution, and poaching. Conservation efforts are underway to protect these magnificent creatures and ensure their survival for future generations."
 );
 
@@ -88,6 +107,7 @@ const frillNeckedLizard = new Animal(
   "1 kg",
   "Northern Australia",
   "images/frillNeckedLizard.jpg",
+  false,
   "The frill-necked lizard, also known as the frilled lizard, is a unique reptile found in northern Australia and New Guinea. It is known for its distinctive frill, which it displays when threatened to intimidate predators. Frill-necked lizards are skilled climbers and spend much of their time in trees, hunting for insects and other small prey. Despite their fearsome appearance, these lizards are generally shy and will usually flee from danger rather than confront it."
 );
 
@@ -101,6 +121,7 @@ const echidna = new Animal(
   "10kg",
   "Throughout Australia",
   "images/echidna.jpg",
+  false,
   "The echidna, also known as the spiny anteater, is a unique mammal found throughout Australia and New Guinea. It is one of only two egg-laying mammals in the world, known as monotremes. Echidnas are covered in sharp spines, which serve as protection against predators. They have a long, sticky tongue which they use to catch ants, termites, and other insects. Echidnas are solitary animals, only coming together to mate. They are important contributors to their ecosystems, helping to control insect populations and aerate the soil with their digging behavior."
 );
 
@@ -114,6 +135,7 @@ const tasmanianDevil = new Animal(
   "10kg",
   "Tasmania",
   "images/tasmanianDevil.jpg",
+  false,
   "The Tasmanian devil is a carnivorous marsupial native to the island of Tasmania. It is known for its ferocious temperament and powerful bite, which allows it to consume every part of its prey, including bones and fur. Tasmanian devils play a vital role in maintaining ecosystem health by controlling populations of small mammals and scavenging on carrion. Unfortunately, they are facing numerous threats including habitat loss, disease, and persecution by humans. Conservation efforts are underway to protect these iconic animals and ensure their survival in the wild."
 );
 
@@ -127,6 +149,7 @@ const quokka = new Animal(
   "3kg",
   "Only found on Rottnest Island and a few places on mainland Western Australia",
   "images/quokka.jpg",
+  false,
   "The quokka is a small marsupial found in southwestern Australia. It is known for its friendly and curious nature, often approaching humans without fear. Quokkas primarily feed on shrubs and grasses, using their sharp claws to dig for roots and tubers. They are important prey for predators such as foxes and feral cats, but their main threat comes from habitat loss and fragmentation. Conservation efforts are underway to protect quokka populations and their habitats, including predator control programs and habitat restoration projects."
 );
 
@@ -146,3 +169,10 @@ export const allAnimals = [
 ];
 
 export const day = new Date().getDay();
+
+export const mammalsWelcomeMess =
+  " Mammals, a class of warm-blooded vertebrates, encompass an incredible diversity of species adapted to various habitats worldwide. With over 6,000 known species, they range from tiny shrews to massive blue whales. What distinguishes mammals is their possession of mammary glands, which produce milk to nourish their young. Most mammals give birth to live young, although a few, like monotremes, lay eggs. Mammals exhibit a wide range of behaviors, from the intricate social structures of elephants to the solitary habits of some big cats. They play vital roles in ecosystems as herbivores, carnivores, omnivores, and scavengers, contributing to the balance of nature.";
+export const birdsWelcomeMess =
+  "Birds, the class Aves, captivate with their aerial prowess and diverse adaptations. With over 10,000 species, they inhabit nearly every corner of the globe, from polar regions to tropical rainforests. These feathered creatures exhibit an extraordinary range of sizes, from the tiny bee hummingbird to the majestic ostrich. Birds play vital ecological roles as pollinators, seed dispersers, and predators, shaping ecosystems worldwide. Their remarkable abilities include flight, intricate mating rituals, and complex vocalizations, with some species capable of mimicking human speech. Birds inspire awe and admiration through their beauty, resilience, and remarkable feats of migration, marking them as icons of the natural world.";
+export const reptilesWelcomeMess =
+  "Reptiles, a diverse class of vertebrates, inhabit various ecosystems worldwide, from deserts to rainforests. With scales covering their bodies, reptiles display remarkable adaptations for survival. They are ectothermic, relying on external sources to regulate body temperature. These creatures encompass a wide array of species, from the majestic Komodo dragon to the agile green iguana. Many reptiles play crucial roles in their ecosystems as both predators and prey. Some, like the chameleon, possess extraordinary camouflage abilities, while others, such as the sea turtle, undertake remarkable migrations across vast ocean expanses. Reptiles continue to fascinate scientists and enthusiasts alike with their intriguing behaviors and evolutionary histories.";

@@ -3,7 +3,7 @@
     <div class="sidebar-mammals">
       <h3>Mammals</h3>
       <% mammals.forEach(mammal => { %>
-      <p id="<%= mammal.id %>" class="animal"><%= mammal.species %></p>
+      <p id="<%= mammal.id %>" class="animal <%= mammal.isActive %>"><%= mammal.species %></p>
       <% }) %>
     </div>
   </div>

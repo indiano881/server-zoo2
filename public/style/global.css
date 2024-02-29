@@ -119,7 +119,10 @@ footer {
   color: #57a928;
   font-size: 1.2rem;
 }
-
+.animal.true {
+  color: #57a928;
+  font-size: 1.2rem;
+}
 .go-routes-link {
   border: 1px solid #174918;
   padding: 3px 8px;
@@ -198,7 +201,9 @@ footer {
   display: flex;
   justify-content: center;
 }
-
+.main-content.home {
+  display: block;
+}
 .card {
   max-width: 800px;
   border: 1px solid #d1cccc;
