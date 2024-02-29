@@ -35,7 +35,7 @@ header {
   position: relative;
   h1 {
     color: white;
-    padding: 60px;
+    padding: 15px 25px;
     font-size: 4rem;
     text-align: right;
     margin-bottom: 5px;
@@ -297,6 +297,7 @@ footer {
     overflow: hidden;
   }
   header {
+    height: 150px;
     h1 {
       font-size: 1.6rem;
       font-size: 1.6rem;
@@ -305,7 +306,9 @@ footer {
       margin-bottom: 40px;
     }
   }
-
+  .navigation {
+    padding: 10px;
+  }
   .routes-container {
     overflow: scroll;
   }
