@@ -29,7 +29,7 @@ body {
 
 header {
   text-align: center;
-  min-height: 30%;
+  min-height: 250px;
   background-image: url("../images/hero-img.jpg");
   background-size: cover;
   position: relative;
@@ -196,7 +196,7 @@ footer {
   width: 60%;
   min-height: 60vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .card {
